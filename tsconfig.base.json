@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@angular-monorepo/Button": ["libs/Button/src/index.ts"],
+      "@angular-monorepo/Card": ["libs/Card/src/index.ts"],
+      "@angular-monorepo/orders": ["libs/orders/src/index.ts"],
+      "@angular-monorepo/products": ["libs/products/src/index.ts"],
+      "@angular-monorepo/shared-ui": ["libs/shared/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -1,0 +1,21 @@
+<lib-products></lib-products>
+
+<lib-button
+  [label]="'Click Me'"
+  [style]="{color: 'white', backgroundColor: 'blue'}"
+  (buttonClick)="onButtonClick($event)"
+></lib-button>
+
+<app-cart></app-cart>
+
+@for (item of product; track $index) {
+  <lib-card
+  [imageUrl]="item.image"
+  [header]="item?.title"
+  [subheader]="item?.description"
+  [buttonText1]="'Add To Cart'"
+  [price]="item?.price"
+  ></lib-card>
+}@empty {
+  <h1>No Product available</h1>
+}
